@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/yyc/Desktop/apple-recognize/build",
+  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4  -g   -std=gnu++11 -o CMakeFiles/ocv.dir/main.cpp.o -c /home/yyc/Desktop/apple-recognize/main.cpp",
+  "file": "/home/yyc/Desktop/apple-recognize/main.cpp"
+}
+]

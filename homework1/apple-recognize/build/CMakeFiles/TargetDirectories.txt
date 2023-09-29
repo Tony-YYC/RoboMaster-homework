@@ -1,0 +1,3 @@
+/home/yyc/Desktop/apple-recognize/build/CMakeFiles/rebuild_cache.dir
+/home/yyc/Desktop/apple-recognize/build/CMakeFiles/edit_cache.dir
+/home/yyc/Desktop/apple-recognize/build/CMakeFiles/ocv.dir
