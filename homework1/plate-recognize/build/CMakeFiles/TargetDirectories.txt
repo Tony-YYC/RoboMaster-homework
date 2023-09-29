@@ -1,0 +1,3 @@
+/home/yyc/Desktop/robomaster-homework/homework1/plate-recognize/build/CMakeFiles/rebuild_cache.dir
+/home/yyc/Desktop/robomaster-homework/homework1/plate-recognize/build/CMakeFiles/edit_cache.dir
+/home/yyc/Desktop/robomaster-homework/homework1/plate-recognize/build/CMakeFiles/ocv.dir
