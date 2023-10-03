@@ -1,0 +1,3 @@
+/home/yyc/Desktop/robomaster-homework/homework1/armor-detect/build/CMakeFiles/rebuild_cache.dir
+/home/yyc/Desktop/robomaster-homework/homework1/armor-detect/build/CMakeFiles/edit_cache.dir
+/home/yyc/Desktop/robomaster-homework/homework1/armor-detect/build/CMakeFiles/ocv.dir

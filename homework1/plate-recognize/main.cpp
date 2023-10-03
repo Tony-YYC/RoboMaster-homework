@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iostream>
 #include <assert.h>
 #include <opencv2/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -71,7 +70,7 @@ std::vector<cv::Point> getPoint(const cv::Mat & p_img)
         if(cv::contourArea(contour) > 3500)
         {
             cnt_len = cv::arcLength(contour, true);
-            cv::approxPolyDP(contour,result,0.05*cnt_len,true);
+            cv::approxPolyDP(contour,result,0.06*cnt_len,true);
         }
     }
     return result;
