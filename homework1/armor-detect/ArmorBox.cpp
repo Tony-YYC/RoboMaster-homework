@@ -65,9 +65,9 @@ void ArmorBox::findArmor()
 bool ArmorBox::armorJudge(const cv::Rect & Rect1,const cv::Rect & Rect2)
 {
     bool flag = true;
-    if(abs(Rect1.area() - Rect1.area()) > areaDiffential) flag = false;
+    if(abs(Rect1.area() - Rect2.area()) > areaDiffential) flag = false;
     if(sqrt(pow(Rect1.x - Rect2.x,2) + pow(Rect1.y-Rect2.y,2)) / double((Rect1.height + Rect2.height)/2) > XYRatioLimit) flag = false;
-    if(flag == true) std::cout << sqrt(pow(Rect1.x - Rect2.x,2) + pow(Rect1.y-Rect2.y,2)) / double((Rect1.height + Rect2.height)/2) << std::endl;
+    //if(flag == true) std::cout << sqrt(pow(Rect1.x - Rect2.x,2) + pow(Rect1.y-Rect2.y,2)) / double((Rect1.height + Rect2.height)/2) << std::endl;
     return flag;
 }
 
