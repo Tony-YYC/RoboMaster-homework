@@ -9,22 +9,18 @@ int main()
     if(ftm.is_open()){
         int pointNum;
         double x,y,z;
-        cv::VideoWriter videoOutput("../output_camera.mp4", cv::VideoWriter::fourcc('H','2','6','4'), 25, cv::Size(2000, 1500));
+        Camera cam;
+        cv::Mat picture = cv::Mat::zeros(1000,2000,CV_8UC3);
         ftm >> pointNum;
         for(int i = 0;i<pointNum;i++)
         {
-            Camera cam;
             ftm >> x >> y >> z;
             Eigen::Vector3d objWldLoca(x,y,z);
-            cv::Mat picture = cv::Mat::zeros(1500,2000,CV_8UC3);
             cam.showObjLoca(picture,objWldLoca);
-            cv::imshow("picture",picture);
-            videoOutput.write(picture);
-            if (cv::waitKey(15) >= 0) {
-                break;
-            }
         }
-        videoOutput.release();
+        cv::imshow("picture",picture);
+        cv::waitKey(0);
+        cv::imwrite("../picture.png",picture);
     }
     else
     {
